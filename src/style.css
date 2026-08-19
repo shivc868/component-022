@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: "Syne", system-ui, sans-serif;
+  background-color: #0e0e0e;
+  color: #f4f4f0;
+}
+
+.spacer {
+  height: 100vh;
+  background-color: rebeccapurple;
+}
+
+.statement {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statement__text {
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+}
+
+.statement__text .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.statement__text .char {
+  display: inline-block;
+  will-change: transform;
+}
