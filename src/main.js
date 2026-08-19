@@ -99,3 +99,6 @@ document.fonts.ready.then(() => {
   ScrollTrigger.refresh();
   document.body.classList.add("is-ready");
 });
+
+// Safety net: never leave the page hidden if the font request stalls
+setTimeout(() => document.body.classList.add("is-ready"), 1500);
